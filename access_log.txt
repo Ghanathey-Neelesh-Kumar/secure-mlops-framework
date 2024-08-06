@@ -1,0 +1,4 @@
+User: user1, Role: data_scientist, Attempt: Success
+User: user1, Role: data_scientist, Attempt: Success
+User: user1, Role: data_scientist, Attempt: Success
+User: user1, Role: data_scientist, Attempt: Success
