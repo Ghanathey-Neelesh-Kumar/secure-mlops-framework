@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure MLOps Framework</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            height: 45px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            height: 45px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .university-logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/teesside_logo.png') }}" alt="Teesside University Logo" class="university-logo">
+        <h1>Secure MLOps Framework</h1>
+        <form action="/configure_security" method="post">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Configure Security Settings</button>
+            </div>
+        </form>
+        <form action="/enforce_access" method="post">
+            <div class="form-group">
+                <input type="text" name="user" class="form-control" placeholder="User">
+            </div>
+            <div class="form-group">
+                <input type="text" name="role" class="form-control" placeholder="Role">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Enforce Access Controls</button>
+            </div>
+        </form>
+        <form action="/encrypt_data" method="post">
+            <div class="form-group">
+                <input type="text" name="data" class="form-control" placeholder="Data to Encrypt">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Encrypt Data</button>
+            </div>
+        </form>
+        <form action="/decrypt_data" method="post">
+            <div class="form-group">
+                <input type="text" name="encrypted_data" class="form-control" placeholder="Encrypted Data">
+            </div>
+            <div class="form-group">
+                <input type="text" name="key" class="form-control" placeholder="Key">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Decrypt Data</button>
+            </div>
+        </form>
+        <form action="/validate_model" method="post">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Validate Model</button>
+            </div>
+        </form>
+    </div>
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
