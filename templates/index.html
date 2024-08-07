@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure MLOps Framework</title>
+</head>
+<body>
+    <h1>Secure MLOps Framework</h1>
+    <form action="/configure_security" method="post">
+        <button type="submit">Configure Security Settings</button>
+    </form>
+    <br>
+    <form action="/enforce_access" method="post">
+        <input type="text" name="user" placeholder="User">
+        <input type="text" name="role" placeholder="Role">
+        <button type="submit">Enforce Access Controls</button>
+    </form>
+    <br>
+    <form action="/encrypt_data" method="post">
+        <input type="text" name="data" placeholder="Data to Encrypt">
+        <button type="submit">Encrypt Data</button>
+    </form>
+    <br>
+    <form action="/decrypt_data" method="post">
+        <input type="text" name="encrypted_data" placeholder="Encrypted Data">
+        <input type="text" name="key" placeholder="Key">
+        <button type="submit">Decrypt Data</button>
+    </form>
+    <br>
+    <form action="/validate_model" method="post">
+        <button type="submit">Validate Model</button>
+    </form>
+</body>
+</html>
